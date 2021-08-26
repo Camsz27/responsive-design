@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: 'Sarpanch', sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  background-color: #f7f8f8;
+  height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav svg {
+  margin-left: 1.5rem;
+  width: 4.125rem;
+}
+
+.nav svg:hover {
+  fill: #ce4499;
+  transition: fill 0.25s ease;
+}
+
+nav {
+  display: flex;
+}
+
+nav h4 {
+  color: #505666;
+  font-family: 'Sarpanch', sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0.9rem 16px;
+  height: 3rem;
+}
+
+nav h4:hover {
+  background-color: white;
+}
+
+#mail {
+  height: 1.25rem;
+  fill: #cdd0d5;
+}
+
+.advertisement {
+  background-color: #ffdd3f;
+  padding: 0.625rem;
+  height: 2.625rem;
+  box-shadow: 0 16px 48px rgb(0 0 0 / 15%);
+}
+
+.advertisement p {
+  height: 1.375rem;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.9rem;
+}
+
+.title {
+  height: 130vh;
+}

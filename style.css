@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarpanch&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500:700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600:700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -119,7 +119,9 @@ nav h4:hover {
 }
 
 .small1 {
-  background-image: url('./Images/main2.jpeg');
+  background-image: url('./Images/main5.jpeg');
+  background-size: 140%;
+  background-position: 60%;
   grid-area: 1 / 3 / 3 / 4;
 }
 
@@ -203,7 +205,7 @@ nav h4:hover {
   align-items: center;
 }
 
-.sectionTitle {
+.popularTitle {
   color: #a7aab2;
   font-size: 2rem;
   letter-spacing: -1px;
@@ -237,4 +239,107 @@ nav h4:hover {
   width: 70%;
   font-weight: 500;
   line-height: 1.5rem;
+}
+
+.latestSection {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.sectionTitle {
+  color: #000;
+  font-weight: 600;
+  font-size: 2.375rem;
+  margin: 7rem 0 4rem;
+}
+
+.latestContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.latest {
+  width: 23%;
+  cursor: pointer;
+}
+
+.latest h5 {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.time {
+  font-size: 0.875rem;
+  color: #a7aab2;
+  margin: 0.188rem 0 1.5rem;
+}
+
+.latestSection button {
+  color: #505666;
+  margin: 3rem auto 4rem;
+}
+
+.channels {
+  background-color: #f7f8f8;
+}
+
+.channelsContainer {
+  width: 95%;
+  margin: auto;
+  padding-top: 0.01rem;
+}
+
+.channelContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.channel {
+  display: flex;
+  flex-flow: column;
+  color: white;
+  justify-content: space-around;
+  align-content: center;
+  width: 18%;
+  height: 14.5rem;
+  max-height: 232px;
+}
+
+.plugg {
+  background-image: url('./Images/channel1.webp');
+}
+
+.neural {
+  background-image: url('./Images/channel2.jpeg');
+}
+
+.shft {
+  background-image: url('./Images/channel3.jpeg');
+}
+
+.growth {
+  background-image: url('./Images/channel4.jpeg');
+}
+
+.hardFork {
+  background-image: url('./Images/channel5.webp');
+}
+
+.channelTitle {
+  width: 7.5rem;
+  margin: 0 auto;
+}
+
+.channelDescription {
+  text-align: center;
+}
+
+footer {
+  height: 40vh;
 }

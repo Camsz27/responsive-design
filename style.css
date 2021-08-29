@@ -12,6 +12,15 @@
   color: #505666;
 }
 
+a {
+  cursor: pointer;
+  color: #00cccc;
+}
+
+a:hover {
+  color: white;
+}
+
 h1 {
   font-weight: 300;
   font-size: 2rem;
@@ -252,7 +261,7 @@ nav h4:hover {
   color: #000;
   font-weight: 600;
   font-size: 2.375rem;
-  margin: 7rem 0 4rem;
+  padding: 7rem 0 4rem;
 }
 
 .latestContainer {
@@ -274,6 +283,10 @@ nav h4:hover {
   margin-top: 1rem;
 }
 
+.latest h5:hover {
+  text-decoration: #f0bbdb underline;
+}
+
 .time {
   font-size: 0.875rem;
   color: #a7aab2;
@@ -287,6 +300,7 @@ nav h4:hover {
 
 .channels {
   background-color: #f7f8f8;
+  margin-bottom: 8rem;
 }
 
 .channelsContainer {
@@ -305,10 +319,10 @@ nav h4:hover {
   flex-flow: column;
   color: white;
   justify-content: space-around;
-  align-content: center;
   width: 18%;
   height: 14.5rem;
   max-height: 232px;
+  cursor: pointer;
 }
 
 .plugg {
@@ -340,6 +354,257 @@ nav h4:hover {
   text-align: center;
 }
 
+.newsletter {
+  display: flex;
+  flex-flow: column;
+  background-color: black;
+  background-image: url('./Images/newsletter.png');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.newsletter h1 {
+  margin: 1.3em auto 1rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.newsletter p {
+  margin: auto;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  color: #a7aab2;
+  background-color: white;
+  width: 50%;
+  margin: auto auto 3rem auto;
+  padding-left: 0.1rem;
+  font-size: 0.875rem;
+}
+
+form svg {
+  width: 0.9rem;
+  fill: #a7aab2;
+  background-color: white;
+  margin-right: 1.5rem;
+}
+
+input {
+  width: 70%;
+  border: none;
+  margin: 0;
+}
+
+#subscribe {
+  background-color: white;
+  color: #a7aab2;
+  border-radius: 0;
+  border: none;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.logos {
+  margin: auto;
+}
+
+.logos svg {
+  width: 1.5rem;
+  fill: #9b9da3;
+  cursor: pointer;
+  margin: 0 0.1rem 3.5rem;
+}
+
+.logos svg:hover {
+  fill: white;
+}
+
+.videos {
+  background-color: #f7f8f8;
+}
+
+.videoContent {
+  width: 85%;
+  margin: auto;
+}
+
+.videoContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+iframe {
+  width: 78%;
+  height: 40rem;
+}
+
+aside {
+  width: 19%;
+}
+
+.video img {
+  width: 90%;
+}
+
+.video p {
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.workContent {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  padding: 6rem 0 5rem;
+}
+
+.textContainer {
+  width: 50%;
+}
+
+.textContainer h4 {
+  font: 400 1rem 'Sarpanch', 'sans-serif';
+  margin-bottom: 0.5rem;
+}
+
+.textContainer .sectionTitle {
+  padding: 0;
+}
+
+.textContainer p {
+  font-size: 1.125rem;
+  margin: 1.5rem 0;
+  font-weight: 300;
+}
+
+.textContainer button {
+  background-color: #00cccc;
+  font-size: 0.813rem;
+  border-radius: 0.25rem;
+}
+
+.iconContainer {
+  width: 50%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+
+.attribute {
+  display: flex;
+  flex: 50%;
+}
+
+.attribute img {
+  width: 7rem;
+}
+
+.attribute h4 {
+  font-size: 1.125rem;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+  margin-left: 0.5em;
+  align-self: center;
+}
+
+.companyContainer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+.companyContainer img {
+  width: 11%;
+  cursor: pointer;
+}
+
 footer {
-  height: 40vh;
+  background-color: #000;
+  padding-bottom: 5em;
+}
+
+.footerContent {
+  display: flex;
+  padding-top: 2em;
+  border-bottom: 1px solid #a7aab2;
+}
+
+.footerContainer {
+  width: 85%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.list h3 {
+  color: white;
+}
+
+.mainFooter {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.mainFooter svg {
+  fill: white;
+  width: 10rem;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+}
+
+.mainFooter .logos svg {
+  width: 1.5rem;
+  fill: #a7aab2;
+  margin: 4em 0.6em 2em 0;
+}
+
+.mainFooter .logos svg:hover {
+  fill: white;
+}
+
+ul {
+  list-style: none;
+  color: #00cccc;
+}
+
+li {
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+.finalWords {
+  color: #a7aab2;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.finalWords p:first-child {
+  margin: 2em 0;
+}
+
+strong {
+  color: white;
+  cursor: pointer;
+}
+
+strong:hover {
+  color: #cc0099;
 }

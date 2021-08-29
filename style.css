@@ -49,6 +49,10 @@ header {
   justify-content: space-between;
 }
 
+#menu {
+  display: none;
+}
+
 .nav svg {
   margin-left: 1.5rem;
   width: 4.125rem;
@@ -275,6 +279,11 @@ nav h4:hover {
   cursor: pointer;
 }
 
+.latest img {
+  width: 100%;
+  max-width: 100%;
+}
+
 .latest h5 {
   font-size: 1rem;
   color: #000;
@@ -356,6 +365,7 @@ nav h4:hover {
 
 .newsletter {
   display: flex;
+  width: 100%;
   flex-flow: column;
   background-color: black;
   background-image: url('./Images/newsletter.png');
@@ -386,6 +396,7 @@ form {
   margin: auto auto 3rem auto;
   padding-left: 0.1rem;
   font-size: 0.875rem;
+  border-radius: 0.25rem;
 }
 
 form svg {
@@ -393,6 +404,7 @@ form svg {
   fill: #a7aab2;
   background-color: white;
   margin-right: 1.5rem;
+  margin-left: 1rem;
 }
 
 input {
@@ -404,10 +416,11 @@ input {
 #subscribe {
   background-color: white;
   color: #a7aab2;
-  border-radius: 0;
+  border-radius: 0.25rem;
   border: none;
   margin-left: 0;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .logos {
@@ -607,4 +620,198 @@ strong {
 
 strong:hover {
   color: #cc0099;
+}
+
+@media screen and (max-device-width: 1024px) {
+  .nav {
+    background-color: white;
+    justify-content: left;
+  }
+
+  #menu {
+    display: inherit;
+    cursor: pointer;
+  }
+
+  .nav svg {
+    fill: #a7aab2;
+  }
+
+  .advertisement,
+  nav,
+  #mail {
+    display: none;
+  }
+
+  .title {
+    flex-flow: column;
+  }
+
+  .title h1 {
+    font-size: 1.125rem;
+    margin-top: 1em;
+  }
+
+  .title svg {
+    width: 27.25rem;
+    max-width: 100%;
+    min-width: 10rem;
+  }
+
+  .main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 12rem);
+  }
+
+  .big1 {
+    grid-area: 1 / 1 / 3 / -1;
+  }
+
+  .small1 {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+
+  .small2 {
+    grid-area: 4 / 1 / -1 / 3;
+  }
+
+  .medium {
+    grid-area: 3 / 3 / 4 / -1;
+    text-align: center;
+  }
+
+  .big2 {
+    grid-area: 4 / 3 / -1 / -1;
+  }
+
+  .big h2,
+  small h2,
+  .medium {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+
+  .articleContainer {
+    flex-flow: column;
+    width: 80%;
+  }
+
+  .articleContainer p {
+    width: 100%;
+    font-weight: 600;
+  }
+
+  .article {
+    margin: 1em;
+  }
+
+  .latest {
+    flex: 45%;
+  }
+
+  .latest img {
+    width: 95%;
+  }
+
+  .latest h5 {
+    width: 95%;
+  }
+
+  .channelContainer {
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .channelContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .channel {
+    min-width: 13.75rem;
+    min-height: 13.75rem;
+    margin-right: 2em;
+  }
+
+  .attribute {
+    flex-flow: column;
+  }
+
+  .attribute img {
+    align-self: center;
+    margin-bottom: 0.7rem;
+  }
+
+  .companyContainer {
+    flex-flow: wrap;
+  }
+
+  .companyContainer img {
+    flex: 28%;
+  }
+}
+
+@media screen and (max-device-width: 768px) {
+  .title h1 {
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .sectionTitle {
+    text-align: center;
+  }
+
+  .newsletter {
+    text-align: center;
+  }
+
+  form svg {
+    min-width: 20px;
+  }
+
+  form {
+    min-width: max(320px, 80%);
+    max-width: 100%;
+  }
+
+  #subscribe {
+    width: 40%;
+    background-color: white;
+    font-size: 0.8rem;
+    text-align: right;
+  }
+
+  .videoContainer {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 2em;
+  }
+
+  aside {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .video {
+    flex: 30%;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  .mainFooter {
+    margin: auto;
+  }
 }
